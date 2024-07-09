@@ -9,3 +9,94 @@ html {
   margin: 0;
   padding: 0;
 }
+span {
+  color: grey;
+}
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 40px;
+  padding: 0px;
+  text-align: center;
+  color: black;
+}
+footer a {
+  color: grey;
+  text-decoration: none;
+  margin: 5px;
+}
+footer a:hover {
+  color: black;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav a {
+  color: gray;
+  text-decoration: none;
+  margin: 0 10px;
+}
+header nav a:hover {
+  color: black;
+}
+header {
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: calc(
+    100vh - 80px
+  ); /* Adjust height based on your header and footer */
+  padding: 0 20px;
+}
+
+.folder {
+  text-align: center;
+}
+
+.folder img {
+  width: 70px; /* Adjust size as needed */
+  height: auto;
+}
+
+/* pages page styling */
+.pages {
+  background-color: black;
+}
+.pages header nav a:hover {
+  color: red;
+}
+.pages footer a:hover {
+  color: red;
+}
+.play-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.play-button-container button {
+  background-color: #a0522d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.play-button-container button:hover {
+  background-color: #8b4513;
+}
+/* Hide the default audio controls */
+.text {
+  color: white;
+  margin-left: 1%;
+}
+.thoughts-all {
+  display: flex;
+  justify-content: center;
+}

@@ -9,26 +9,58 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tan.</title>
-    <link rel="icon" href="../data/favicon.ico" type="image/x-icon" />
+    <title>tan</title>
+    <link rel="icon" href="./data/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <ul>
-          <li><a href="./aboutme/index.html">About Me</a></li>
-          <li><a href="./projects/index.html">Projects</a></li>
-          <li><a href="./gallery/index.html">Gallery</a></li>
-        </ul>
+      <nav>
+        <a href="./pages/aboutme.html">about me</a>
       </nav>
     </header>
-    <div>
-      <a href="https://github.com/tankarageldi">github</a>
-      <a href="https://www.linkedin.com/in/tankarageldi/">linkedin</a>
+    <div class="content">
+      <div class="folder" id="icon1">
+        <a href="./pages/thoughts.html">
+          <img src="./data/grayfolder.png" alt="thoughts" />
+        </a>
+        <p>thoughts</p>
+      </div>
+      <div class="folder" id="icon2">
+        <a href="./pages/projects.html">
+          <img src="./data/blackfolder.png" alt="projects" />
+        </a>
+        <p>projects</p>
+      </div>
+      <div class="folder" id="icon3">
+        <a href="./pages/gallery.html">
+          <img src="./data/defaultfolder.png" alt="gallery" />
+        </a>
+        <p>gallery</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <a href="https://github.com/tankarageldi">github</a><span> / </span>
+      <a href="https://www.linkedin.com/in/tankarageldi/">linkedin</a
+      ><span> / </span>
       <a href="https://open.spotify.com/user/tankarageldi?si=c20dd9dd741c41b2"
         >spotify</a
-      >
-    </div>
+      ><span> /</span>
+      <a href="https://vsco.co/tankarageldi/gallery">vsco</a>
+    </footer>
+    <script>
+      document
+        .getElementById("playButton")
+        .addEventListener("click", function () {
+          var audio = document.getElementById("audio");
+          if (audio.paused) {
+            audio.play();
+            this.textContent = "Pause PRIDE by Kendrick Lamar";
+          } else {
+            audio.pause();
+            this.textContent = "Play PRIDE by Kendrick Lamar";
+          }
+        });
+    </script>
   </body>
 </html>
