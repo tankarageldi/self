@@ -20,7 +20,14 @@
       align-items: center;
     }
     .responsive-image {
+      max-width: 100%;
       height: 760px;
+    }
+    @media (max-height: 760px) {
+      .responsive-image {
+        height: auto;
+        min-width: 100%;
+      }
     }
   </style>
   <body>
@@ -35,6 +42,12 @@
     <footer class="footer">
       <a href="https://www.linkedin.com/in/tankarageldi/" target="_blank"
         >linkedin</a
+      >
+      <a
+        href="../data/tankarageldiresumecs.pdf"
+        download="TanKarageldiResume.pdf"
+        class="download-link"
+        >resume</a
       >
     </footer>
   </body>
